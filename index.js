@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const mongoose = require("mongoose");
 
-const mongooseUri = "mongodb+srv://paiged:637a440f02648841e588b730@cluster0.9jk8vwf.mongodb.net/movieDatabase"
+	//paswword G2m2YxdGCOkBbFUY
+const mongooseUri = "mongodb+srv://paiged:G2m2YxdGCOkBbFUY@cluster0.9jk8vwf.mongodb.net/movieDatabase"
 mongoose.connect(mongooseUri, {useNewUrlParser: true}, {useUnifiedTopology: true})
 const movieSchema = {
 	title: String,
@@ -46,8 +47,6 @@ app.get("/read", function(request, response) {
 	})
 })
 
-// Todo: Implement your own MongoDB Atlas Organization, Project, Database Cluster, Database, and Collection.
-// Todo: Implement and test the Update and Delete functionCRUD.
 
 // End MongoDB Atlas ********
 
